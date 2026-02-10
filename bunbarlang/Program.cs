@@ -22,7 +22,11 @@
 							{
 								Console.WriteLine("Nincs annyi pénzed");
 							}
-						} while (bet > penz);
+							if (bet < 0)
+							{
+								Console.WriteLine("Nem lehet negatív mennyiséget fogadni");
+							}
+						} while (bet > penz || bet < 0);
 						penz -= bet;
 						penz += new Blackjack(bet).Bet;
 						break;
@@ -30,7 +34,7 @@
 
 
 			} while (valasz != "k");
-
+			Console.WriteLine($"Végül {penz}Ft-al végeztél");
 
 		}
 	}
