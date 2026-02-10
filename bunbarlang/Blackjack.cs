@@ -23,14 +23,7 @@ namespace bunbarlang
 						switch (i.Szam)
 						{
 							case "A":
-								if (szum <= 10)
-								{
-									szum += 11;
-								}
-								else
-								{
-									szum++;
-								}
+								szum += 11;
 								break;
 							case "J":
 							case "Q":
@@ -40,6 +33,16 @@ namespace bunbarlang
 							default:
 								szum += Convert.ToInt32(i.Szam);
 								break;
+						}
+					}
+					if (szum > 21)
+					{
+						foreach(var i in lk)
+						{
+							if (i.Szam == "A" && szum > 21)
+							{
+								szum -= 10;
+							}
 						}
 					}
 					return szum;

@@ -42,32 +42,31 @@ namespace bunbarlang
 		public override string ToString()
 		{
 			OffsetString = "";
+			string SzamSpace = "";
 			for (int i = 0; i < Offset; i++)
 			{
 				OffsetString += "          ";
 			}
 			if (this.Szam != "10")
 			{
+				SzamSpace = "      ";
+			}
+			else
+			{
+				SzamSpace = "     ";
+			}
 			return $@"
 {OffsetString}|-------|
-{OffsetString}|{this.Szam}      |
+{OffsetString}|{this.Szam}{SzamSpace}|
 {OffsetString}|       |
 {OffsetString}|       |
 {OffsetString}|{this.Szin}   |
 {OffsetString}|_______|";
 
 			}
-			else
-			{
-				return $@"
-{OffsetString}|-------|
-{OffsetString}|{this.Szam}     |
-{OffsetString}|       |
-{OffsetString}|       |
-{OffsetString}|{this.Szin}   |
-{OffsetString}|_______|";
-			}
+
+			
+
 			
 		}
 	}
-}
