@@ -9,7 +9,7 @@
 			int bet;
 			do
 			{
-				Console.WriteLine("Mit akarsz játszani? (1. Blackjack stbstbstbstb k = kilépés)");
+				Console.WriteLine("Mit akarsz játszani? (1. Blackjack k = kilépés)");
 				valasz = Console.ReadLine();
 				switch (valasz)
 				{
