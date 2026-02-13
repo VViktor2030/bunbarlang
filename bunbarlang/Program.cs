@@ -13,12 +13,6 @@ namespace bunbarlang
 			string nev = Console.ReadLine();
 			do
 			{
-
-				Console.WriteLine("Mit akarsz játszani?");
-				Console.WriteLine("1. Blackjack");
-				Console.WriteLine("2. Nagyobb lap nyer");
-				Console.WriteLine("k = kilépés");
-
 				Console.WriteLine("Mit akarsz játszani? (1. Blackjack 2. Nagyobb Kártya 3. Pig Dice k = kilépés)");
 
 				valasz = Console.ReadLine();
