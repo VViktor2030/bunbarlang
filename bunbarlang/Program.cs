@@ -13,14 +13,14 @@ namespace bunbarlang
 			string nev = Console.ReadLine();
 			do
 			{
-<<<<<<< HEAD
+
 				Console.WriteLine("Mit akarsz játszani?");
 				Console.WriteLine("1. Blackjack");
 				Console.WriteLine("2. Nagyobb lap nyer");
 				Console.WriteLine("k = kilépés");
-=======
-				Console.WriteLine("Mit akarsz játszani? (1. Blackjack 2. Pig Dice k = kilépés)");
->>>>>>> f5995c03576bc617968ac9d3fd66f60874078b81
+
+				Console.WriteLine("Mit akarsz játszani? (1. Blackjack 2. Nagyobb Kártya 3. Pig Dice k = kilépés)");
+
 				valasz = Console.ReadLine();
 				switch (valasz)
 				{
@@ -41,7 +41,7 @@ namespace bunbarlang
 						penz -= bet;
 						penz += new Blackjack(bet).Bet;
 						break;
-<<<<<<< HEAD
+
 					case "2":
                         do
                         {
@@ -60,13 +60,12 @@ namespace bunbarlang
                         penz -= bet;
                         penz += new NagyobbLap(bet).Bet;
                         break;	
-=======
-					case "2":
+
+					case "3":
 						PigDiceGame p = new PigDiceGame();
 						Player jatekos = new Player(nev);
 						p.jatekos_kor(jatekos);
 						break;
->>>>>>> f5995c03576bc617968ac9d3fd66f60874078b81
 				}
 
 
