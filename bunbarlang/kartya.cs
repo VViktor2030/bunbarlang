@@ -9,6 +9,18 @@ namespace bunbarlang
 {
 	internal class Kartya
 	{
+		public int Ertek()
+{
+    switch (Szam)
+    {
+        case "A": return 14;
+        case "K": return 13;
+        case "Q": return 12;
+        case "J": return 11;
+        default: return int.Parse(Szam);
+    }
+}
+
 
 
 		private string szam;
