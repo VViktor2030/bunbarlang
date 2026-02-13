@@ -9,8 +9,6 @@ namespace bunbarlang
 			int penz = 1000;
 			string valasz;
 			int bet;
-            Console.WriteLine("Mi a neved?");
-			string nev = Console.ReadLine();
 			do
 			{
 				Console.WriteLine("Mit akarsz játszani? (1. Blackjack 2. Nagyobb Kártya 3. Pig Dice k = kilépés)");
@@ -57,7 +55,7 @@ namespace bunbarlang
 
 					case "3":
 						PigDiceGame p = new PigDiceGame();
-						Player jatekos = new Player(nev);
+						Player jatekos = new Player();
 						p.jatekos_kor(jatekos);
 						break;
 				}
